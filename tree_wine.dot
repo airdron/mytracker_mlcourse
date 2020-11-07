@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="proline <= 755.0\ngini = 0.649\nsamples = 124\nvalue = [48, 48, 28]", fillcolor="#ffffff"] ;
+1 [label="color_intensity <= 4.85\ngini = 0.491\nsamples = 71\nvalue = [2, 44, 25]", fillcolor="#adf4cb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="alcohol <= 13.145\ngini = 0.166\nsamples = 45\nvalue = [2, 41, 2]", fillcolor="#4be78d"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 37\nvalue = [0, 37, 0]", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="color_intensity <= 4.06\ngini = 0.625\nsamples = 8\nvalue = [2, 4, 2]", fillcolor="#bdf6d5"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4, 0]", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="gini = 0.5\nsamples = 4\nvalue = [2, 0, 2]", fillcolor="#ffffff"] ;
+4 -> 6 ;
+7 [label="hue <= 0.9\ngini = 0.204\nsamples = 26\nvalue = [0, 3, 23]", fillcolor="#9153e8"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 22\nvalue = [0, 0, 22]", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="malic_acid <= 2.655\ngini = 0.375\nsamples = 4\nvalue = [0, 3, 1]", fillcolor="#7beeab"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0]", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]", fillcolor="#8139e5"] ;
+9 -> 11 ;
+12 [label="color_intensity <= 3.435\ngini = 0.238\nsamples = 53\nvalue = [46, 4, 3]", fillcolor="#e99355"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4, 0]", fillcolor="#39e581"] ;
+12 -> 13 ;
+14 [label="flavanoids <= 1.485\ngini = 0.115\nsamples = 49\nvalue = [46, 0, 3]", fillcolor="#e78946"] ;
+12 -> 14 ;
+15 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3]", fillcolor="#8139e5"] ;
+14 -> 15 ;
+16 [label="gini = 0.0\nsamples = 46\nvalue = [46, 0, 0]", fillcolor="#e58139"] ;
+14 -> 16 ;
+}
